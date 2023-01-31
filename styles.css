@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: aqua;
+}
+.container{
+    background-color: aliceblue;
+    border-radius: 0.8em;
+    width: 95%;
+    max-width: 43.75em;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 5em 2em;
+}
+.txtareas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.txtareas div{
+    display: flex;
+    flex-direction: column;
+}
+.txtareas textarea{
+    resize: none;
+    border: 1px solid #02001f;
+    border-radius: 0.3em;
+    margin: 1em 0 2em 0;
+    padding: 0.5em;
+}
+label{
+    color: black;
+}
+#len{
+    width: 5em;
+    padding: 0.8em 1em;
+    border: 1px solid #02001f;
+    border-radius: 0.5em;
+}
+#truncateBtn,#copyTxtBtn{
+    padding: 0.8em 1em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .txtareas{
+        grid-template-columns: 1fr;
+    }
+}
